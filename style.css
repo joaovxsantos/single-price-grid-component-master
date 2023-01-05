@@ -57,7 +57,6 @@ h3 {
 
 .page-content {
   display: flex;
-  
 }
 
 .plan-content {
@@ -66,7 +65,7 @@ h3 {
   font-size: 1.5rem;
   width: 50%;
   color: #fff;
-  border-radius: 0 0 0 .5rem;
+  border-radius: 0 0 0 0.5rem;
 }
 
 .plan-content h2,
@@ -109,19 +108,52 @@ h3 {
   padding: 3rem;
   width: 50%;
   font-size: 1.3rem;
-  border-radius: 0 0 .5rem 0;
-
+  border-radius: 0 0 0.5rem 0;
 }
 
-.infos-content ul{
-    list-style-type: none;
-    margin-top: 1.3rem;
+.infos-content ul {
+  list-style-type: none;
+  margin-top: 1.3rem;
 }
 
-.infos-content ul li{
-    color: hsl(204, 43%, 93%);
-    opacity: 0.8;
-    margin-bottom: .5rem;
+.infos-content ul li {
+  color: hsl(204, 43%, 93%);
+  opacity: 0.8;
+  margin-bottom: 0.3rem;
 }
 
+@media (max-width: 600px) {
+  :root {
+    font-size: 60%;
+  }
 
+  .main-container {
+    width: 82%;
+    max-width: 500px;
+  }
+
+  .content-header h1 {
+    font-size: 15px;
+  }
+
+  .content-header label,
+  .content-header p {
+    font-size: 13px;
+    width: 105%;
+  }
+
+  .page-content {
+    flex-direction: column;
+  }
+
+  .plan-content,
+  .infos-content {
+    width: 100%;
+  }
+  .plan-content {
+    border-radius: 0;
+  }
+  .infos-content {
+    border-radius: 0 0 5px 5px;
+  }
+}
