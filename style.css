@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: hsl(204, 43%, 93%);
+}
+
+p,
+li,
+label,
+h3 {
+  color: hsl(204, 43%, 93%);
+}
+
+.main-container {
+  width: 60rem;
+}
+
+.content-header {
+  background: #fff;
+  padding: 3rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.content-header h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.content-header label {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.content-header p {
+  margin-top: 1.3rem;
+  line-height: 2.4rem;
+  color: hsl(218, 22%, 67%);
+}
+
+.page-content {
+  display: flex;
+  
+}
+
+.plan-content {
+  background: hsl(179, 62%, 40%);
+  padding: 3.2rem;
+  font-size: 1.5rem;
+  width: 50%;
+  color: #fff;
+  border-radius: 0 0 0 .5rem;
+}
+
+.plan-content h2,
+h3 {
+  font-size: 1.5rem;
+}
+
+.price-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.price-content p {
+  font-size: 3rem;
+}
+
+.price-content label {
+  opacity: 0.7;
+}
+
+.price-content ~ p {
+  margin-bottom: 2rem;
+}
+
+.plan-content button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.3rem;
+  color: #fff;
+  background: hsl(71, 73%, 54%);
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.infos-content {
+  background: hsl(179, 62%, 43%);
+  padding: 3rem;
+  width: 50%;
+  font-size: 1.3rem;
+  border-radius: 0 0 .5rem 0;
+
+}
+
+.infos-content ul{
+    list-style-type: none;
+    margin-top: 1.3rem;
+}
+
+.infos-content ul li{
+    color: hsl(204, 43%, 93%);
+    opacity: 0.8;
+    margin-bottom: .5rem;
+}
+
+
